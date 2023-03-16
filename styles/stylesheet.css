@@ -13,7 +13,7 @@ width: 390px;
 height: 62px;
 left: 0px;
 margin-top: 11px;
-background: #F28775;
+box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .logo_row{
@@ -22,7 +22,13 @@ background: #F28775;
   width: 100%;
   margin: auto;
   top: 0px;
-  background: #F28775;
+  font: 'bunch-blossoms-personal-use';
+  font-family: 'Bunch Blossoms Personal Use';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 47px;
+  padding: 16px 24px
 }
 
 .rectangle_progress_box{
@@ -31,7 +37,7 @@ background: #F28775;
   width: 357px;
   margin: auto;
   margin-top: 14px;
-  background: #D9D9D9;
+  background: #C5B6E7;
   border-radius: 20px;
 }
 
@@ -40,7 +46,7 @@ background: #F28775;
   height: 60px;
   width: 357px;
   left: 0px;
-  background: #FCAFA3;
+  background: #8E78C1;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px 20px 0px 0px;
   z-index: auto;
@@ -70,6 +76,18 @@ line-height: 20px;
 color: #000000;
 }
 
+.wordslearnt{
+color: #C178B1
+}
+
+.wordsnotlearnt{
+color: #5240BF
+}
+
+.unknownwords{
+color: #7D66B2
+}
+
 .progress_box_text_chinese{
 position: absolute;
 left: 15px;
@@ -86,7 +104,7 @@ width: 144px;
 height: 25px;
 left: 106px;
 top: 175px;
-background: #FCAFA3;
+background: #8E78C1;
 border-radius: 17px;
 
 font-family: 'Circular Std';
@@ -106,7 +124,7 @@ line-height: 25px;
   width: 357px;
   margin: auto;
   margin-top: 14px;
-  background: #D9D9D9;
+  background: #A5DCDF;
   border-radius: 20px;
 }
 
@@ -115,12 +133,23 @@ line-height: 25px;
   height: 60px;
   width: 357px;
   left: 0px;
-  background: #DD7362;
+  background: #58CDD5;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
   border-radius: 20px 20px 0px 0px;
 }
 
 .wordoftheday_large{
+  position: absolute;
+  margin-top: 20px;
+  left: 20px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 300px;
+  color: #000000;
+}
+
+.wordoftheday_small{
   position: absolute;
   margin-top: 30px;
   left: 69px;
@@ -142,4 +171,46 @@ line-height: 25px;
   font-size: 15px;
   line-height: 19px;
   color: #000000;
+}
+
+
+.flip-card {
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:active .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
 }
