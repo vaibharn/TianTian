@@ -160,6 +160,14 @@ line-height: 25px;
   color: #000000;
 }
 
+.wordoftheday_meaning{
+position: absolute;
+margin-left: auto;
+left: 179px;
+top: 300px;
+transform: translate(-50%, -0%);
+}
+
 .taptoflip{
   position: absolute;
   width: 140px;
@@ -189,7 +197,7 @@ line-height: 25px;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:active .flip-card-inner {
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
