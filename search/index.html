@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/bunch-blossoms-personal-use" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="../styles/stylesheet.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class = "align-self-center logo_row " id="logo"> TianTian
+		</div>
+
+		<div class="input-group mt-1 search-bar-pad">
+  			<input type="search" class="form-control search-bar" placeholder="&#xe8b6; Search for words" type = "text" id = "word-search" />
+		</div>
+
+		<div class = "overflow-auto word_list mt-1" id = "word_list">
+
+			<div class = "word-box mt-3" id = "word_box">
+				<div class = "word-box-chinese"> 爱 </div>
+				<div class = "word-box-english"> ài </div>
+			</div>
+
+			<div class = "word-box mt-3" id = "word_box">
+				<div class = "word-box-chinese"> 爱 </div>
+				<div class = "word-box-english"> ài </div>
+			</div>
+
+		</div>
+		
+		<div class = "align-self-center bottom_row">
+			<div class = "row justify-content-evenly align-items-center">
+				<div class = "col-1 mt-2" onclick= "window.location.href = 'http://iyer.one/TianTian/';">
+					<img src = "../content/icon/home_line.svg" alt="Home"/>
+				</div>
+
+				<div class = "col-1 mt-2">
+					<img src = "../content/icon/search_solid.svg" alt="Search"/>
+				</div>
+
+				<div class = "col-1 mt-2">
+					<img src = "../content/icon/flashcard_line.svg" alt="FlashCard"/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+	</body>
+</html>
