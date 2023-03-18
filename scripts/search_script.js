@@ -17,7 +17,6 @@ function processData(allText) {
   
   for (var i = 1; i < allTextLines.length; i++) {
     var data = allTextLines[i].split(',');
-    console.log(data)
     var iDiv = document.createElement('div');
     iDiv.id = data[0];
     iDiv.className = 'word-box mt-3';
@@ -35,7 +34,10 @@ function processData(allText) {
     iDiv_english.className = 'word-box-english';
     iDiv_english.appendChild(content)
     iDiv.appendChild(iDiv_english)
-
+    const word = data[0];
+    iDiv.addEventListener('click',()=>{
+      window.location.href = `/wordcard/?word=${word}` ;
+   })
     word_box.appendChild(iDiv);
   }
 }

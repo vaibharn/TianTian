@@ -1,154 +1,154 @@
-Chinese_Word,English_Word
-爱,ài
-八,bā
-爸爸,bàba
-北京,běijīng
-杯子,bēizi
-本,běn
-不,bù
-不客气,búkèqì
-菜,cài
-茶,chá
-吃,chī
-出租车,chūzūchē
-大,dà
-打电话,dǎdiànhuà
-的,de
-点,diǎn
-电脑,diànnǎo
-电视,diànshì
-电影,diànyǐng
-东西,dōngxi
-都,dōu
-读,dú
-对不起,duìbùqǐ
-多,duō
-多少,duōshǎo
-二,èr
-儿子,érzi
-饭店,fàndiàn
-飞机,fēijī
-分钟,fēnzhōng
-高兴,gāoxìng
-个,gè
-工作,gōngzuò
-狗,gǒu
-汉语,hànyǔ
-好,hǎo
-和,hé
-喝,hē
-很,hěn
-后面,hòumiàn
-回,huí
-会,huì
-火车站,huǒchēzhàn
-几,jǐ
-家,jiā
-叫,jiào
-今天,jīntiān
-九,jiǔ
-开,kāi
-看,kàn
-看见,kànjiàn
-块,kuài
-来,lái
-老师,lǎoshī
-了,le
-冷,lěng
-里,lǐmiàn
-零,líng
-六,liù
-吗,ma
-买,mǎi
-妈妈,māma
-猫,māo
-没,méi
-没关系,méiguānxì
-米饭,mǐfàn
-明天,míngtiān
-名字,míngzi
-那 (那儿),nà (nàr)
-哪（哪儿）,nǎ (nǎr)
-呢,ne
-能,néng
-你,nǐ
-年,nián
-你们,nǐmen
-女儿,nǚér
-朋友,péngyou
-漂亮,piàoliàng
-苹果,píngguǒ
-七,qī
-钱,qián
-前面,qiánmiàn
-请,qǐng
-去,qù
-热,rè
-人,rén
-认识,rènshi
-日,rì
-三,sān
-上,shàng
-商店,shāngdiàn
-上午,shàngwǔ
-少,shǎo
-什么,shén me
-十,shí
-是,shì
-时候,shíhou
-书,shū
-谁,shuí
-水,shuǐ
-水果,shuǐguǒ
-睡觉,shuìjiào
-说话,shuōhuà
-四,sì
-岁,suì
-他,tā
-她,tā
-太,tài
-他们,tāmen
-她们,tāmen
-天气,tiānqì
-听,tīng
-同学,tóngxué
-喂,wèi
-我,wǒ
-我们,wǒmen
-五,wǔ
-下,xià
-想,xiǎng
-先生,xiānsheng
-现在,xiànzài
-小,xiǎo
-小姐,xiǎojiě
-下午,xiàwǔ
-下雨,xiàyǔ
-写,xiě
-些,xiē
-谢谢,xièxie
-喜欢,xǐhuān
-星期,xīngqī
-学生,xuéshēng
-学习,xuéxí
-学校,xuéxiào
-一,yī
-衣服,yīfu
-医生,yīshēng
-医院,yīyuàn
-椅子,yǐzi
-有,yǒu
-月,yuè
-在,zài
-再见,zàijiàn
-怎么,zěnme
-怎么样,zěnmeyàng
-这 (这儿),zhè (zhèr)
-中国,zhōng guó
-中午,zhōngwǔ
-住,zhù
-桌子,zhuōzi
-字,zì
-做,zuò
-坐,zuò
-昨天,zuótiān
+Chinese_Word,Pinyin,English
+爱,ài,love
+八,bā,eight
+爸爸,bàba,father
+北京,běijīng,Beijing
+杯子,bēizi,cup
+本,běn,volume
+不,bù,no
+不客气,búkèqì,you are welcome
+菜,cài,vegetable
+茶,chá,tea
+吃,chī,eat
+出租车,chūzūchē,taxi
+大,dà,big
+打电话,dǎdiànhuà,call up
+的,de,(possessive particle)
+点,diǎn,dot, spot
+电脑,diànnǎo,computer
+电视,diànshì,television
+电影,diànyǐng,movie
+东西,dōngxi,thing
+都,dōu,all
+读,dú,read
+对不起,duìbùqǐ,sorry
+多,duō,many, much
+多少,duōshǎo,how many, how much
+二,èr,two
+儿子,érzi,son
+饭店,fàndiàn,restaurant
+飞机,fēijī,airplane
+分钟,fēnzhōng,minute
+高兴,gāoxìng,happy
+个,gè,a, an
+工作,gōngzuò,work
+狗,gǒu,dog
+汉语,hànyǔ,Chinese
+好,hǎo,good
+和,hé,and
+喝,hē,drink
+很,hěn,quite, very
+后面,hòumiàn,behind
+回,huí,return
+会,huì,can
+火车站,huǒchēzhàn,train station
+几,jǐ,a few, how many
+家,jiā,home
+叫,jiào,call
+今天,jīntiān,today
+九,jiǔ,nine
+开,kāi,open
+看,kàn,look
+看见,kànjiàn,see
+块,kuài,piece
+来,lái,come
+老师,lǎoshī,teacher
+了,le,(completed action particle)
+冷,lěng,cold
+里,lǐmiàn,inside
+零,líng,zero
+六,liù,six
+吗,ma,(question particle)
+买,mǎi,buy
+妈妈,māma,mother
+猫,māo,cat
+没,méi,no
+没关系,méiguānxì,It doesn’t matter
+米饭,mǐfàn,rice
+明天,míngtiān,tomorrow
+名字,míngzi,name
+那 (那儿),nà (nàr),there, that
+哪（哪儿）,nǎ (nǎr),where
+呢,ne,(reciprocal particle)
+能,néng,can, be able to
+你,nǐ,you
+年,nián,year
+你们,nǐmen,you (pl.)
+女儿,nǚér,daughter
+朋友,péngyou,friend
+漂亮,piàoliàng,beautiful
+苹果,píngguǒ,apple
+七,qī,seven
+钱,qián,money
+前面,qiánmiàn,front
+请,qǐng,please
+去,qù,go
+热,rè,hot
+人,rén,person
+认识,rènshi,know
+日,rì,day
+三,sān,three
+上,shàng,up
+商店,shāngdiàn,store
+上午,shàngwǔ,morning
+少,shǎo,few, little
+什么,shén me,what, why
+十,shí,ten
+是,shì,be (am, is, are)
+时候,shíhou,time
+书,shū,book
+谁,shuí,who
+水,shuǐ,water
+水果,shuǐguǒ,fruit
+睡觉,shuìjiào,sleep
+说话,shuōhuà,speak
+四,sì,four
+岁,suì,age
+他,tā,he, him
+她,tā,she, her
+太,tài,too
+他们,tāmen,they
+她们,tāmen,they (females, pl.)
+天气,tiānqì,weather
+听,tīng,listen
+同学,tóngxué,classmate
+喂,wèi,hello
+我,wǒ,I, me
+我们,wǒmen,we, us
+五,wǔ,five
+下,xià,down
+想,xiǎng,want
+先生,xiānsheng,sir
+现在,xiànzài,now
+小,xiǎo,small
+小姐,xiǎojiě,Miss
+下午,xiàwǔ,afternoon
+下雨,xiàyǔ,rain
+写,xiě,write
+些,xiē,some
+谢谢,xièxie,thank
+喜欢,xǐhuān,love, like
+星期,xīngqī,week
+学生,xuéshēng,student
+学习,xuéxí,study
+学校,xuéxiào,school
+一,yī,one
+衣服,yīfu,cloth
+医生,yīshēng,doctor
+医院,yīyuàn,hospital
+椅子,yǐzi,chair
+有,yǒu,have
+月,yuè,month
+在,zài,in, at
+再见,zàijiàn,good-bye
+怎么,zěnme,how
+怎么样,zěnmeyàng,how about
+这 (这儿),zhè (zhèr),here, this
+中国,zhōng guó,China
+中午,zhōngwǔ,noon
+住,zhù,live
+桌子,zhuōzi,desk
+字,zì,character
+做,zuò,do
+坐,zuò,sit
+昨天,zuótiān,yesterday
