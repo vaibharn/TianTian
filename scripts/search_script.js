@@ -36,7 +36,7 @@ function processData(allText) {
     iDiv.appendChild(iDiv_english)
     const word = data[0];
     iDiv.addEventListener('click',()=>{
-      window.location.href = `/wordcard/?word=${word}` ;
+      window.location.href = `/TianTian/wordcard/?word=${word}` ;
    })
     word_box.appendChild(iDiv);
   }

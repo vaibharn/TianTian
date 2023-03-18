@@ -43,5 +43,5 @@ document.getElementById("wordcard-pinyin").innerHTML = curr[1];
 document.getElementById("wordcard-meaning").innerHTML = `Meaning:  ${curr[2]}`;
 
 document.getElementById("goback").onclick = function () {
-    location.href = "/search";
+    location.href = "/TianTian/search/";
 };
