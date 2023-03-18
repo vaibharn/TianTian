@@ -8,3 +8,37 @@ function handleFlip() {
 }
 
 btn.addEventListener('click', handleFlip)
+
+const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: [
+        'Learnt',
+        'Not Learnt',
+        'Unknown'
+      ],
+      datasets: [{
+        label: 'Learning Stats',
+        data: [40, 10, 100],
+        backgroundColor: [
+          '#C178B1',
+          '#5240BF',
+          '#7D66B2'
+        ],
+        hoverOffset: 1,
+        borderWidth: 0,
+        devicePixelRatio: 4,
+      }]
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: false
+        }
+      }
+    },
+  });
+  Chart.overrides.doughnut.plugins.legend.display = false;
+  Chart.options.plugins.tooltip.enabled = false;

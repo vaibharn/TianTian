@@ -89,6 +89,14 @@ line-height: 20px;
 color: #000000;
 }
 
+.progress_chart{
+  position: absolute;
+  left: 20px;
+  top : 85px;
+  height: 90px;
+  width: 100px;
+}
+
 .wordslearnt{
 color: #C178B1
 }
