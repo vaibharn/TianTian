@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Xiao Lai SC';
+    src: url('../styles/XiaolaiSC-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+
+
 .container {
   height: 844px;
   max-width:390px;
@@ -98,7 +105,7 @@ color: #7D66B2
 position: absolute;
 left: 15px;
 top: 35px;
-font-family: '小賴字體 SC';
+font-family: 'Xiao Lai SC';
 font-size: 17px;
 line-height: 20px;
 color: #000000;
