@@ -306,7 +306,7 @@ transform: translate(-50%, -0%);
   left: 0px;
   background: #E2F1F3;
   border-radius: 16px;
-  padding: 5px 35px;
+  padding: 5px 20px;
 }
 
 
@@ -316,7 +316,7 @@ transform: translate(-50%, -0%);
   font-family: 'Circular Std';
   font-style: normal;
   font-weight: 450;
-  font-size: 40px;
+  font-size: 35px;
 
   color: #000000;
 }
@@ -324,10 +324,10 @@ transform: translate(-50%, -0%);
 .word-box-english{
   float: right;
 
-  font-family: 'Circular Std';
+  font-family: 'Xiao Lai SC';
   font-style: normal;
   font-weight: 450;
-  font-size: 40px;
+  font-size: 35px;
 
   color: #000000;
 }

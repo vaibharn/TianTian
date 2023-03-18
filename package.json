@@ -1,0 +1,19 @@
+{
+  "name": "tiantian",
+  "version": "1.0.0",
+  "description": "Akshaya's Chinese Learning App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiyeraditya/TianTian.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aiyeraditya/TianTian/issues"
+  },
+  "homepage": "https://github.com/aiyeraditya/TianTian#readme"
+}

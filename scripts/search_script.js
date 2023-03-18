@@ -21,6 +21,21 @@ function processData(allText) {
     var iDiv = document.createElement('div');
     iDiv.id = data[0];
     iDiv.className = 'word-box mt-3';
+
+    var content = document.createTextNode(data[0]);
+    var iDiv_chinese = document.createElement('div');
+    iDiv_chinese.id = `${data[0]}chinese`;
+    iDiv_chinese.className = 'word-box-chinese';
+    iDiv_chinese.appendChild(content)
+    iDiv.appendChild(iDiv_chinese)
+
+    content = document.createTextNode(data[1]);
+    var iDiv_english = document.createElement('div');
+    iDiv_english.id = `${data[0]}english`;
+    iDiv_english.className = 'word-box-english';
+    iDiv_english.appendChild(content)
+    iDiv.appendChild(iDiv_english)
+
     word_box.appendChild(iDiv);
   }
 }
