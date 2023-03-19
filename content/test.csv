@@ -1,4 +1,4 @@
-Chinese_Word,Pinyin,English
+Chinese,Pinyin,English
 爱,ài,love
 八,bā,eight
 爸爸,bàba,father
@@ -67,13 +67,15 @@ Chinese_Word,Pinyin,English
 米饭,mǐfàn,rice
 明天,míngtiān,tomorrow
 名字,míngzi,name
-那 (那儿),nà (nàr),there, that
-哪（哪儿）,nǎ (nǎr),where
+那 ,nà,that
+那儿,nàr,there
+哪,nǎ ,what
+哪儿,nǎr,where
 呢,ne,(reciprocal particle)
 能,néng,can, be able to
 你,nǐ,you
 年,nián,year
-你们,nǐmen,you (pl.)
+你们,nǐmen,you plural
 女儿,nǚér,daughter
 朋友,péngyou,friend
 漂亮,piàoliàng,beautiful
@@ -143,7 +145,8 @@ Chinese_Word,Pinyin,English
 再见,zàijiàn,good-bye
 怎么,zěnme,how
 怎么样,zěnmeyàng,how about
-这 (这儿),zhè (zhèr),here, this
+这,zhè,this
+这儿,zhèr,here
 中国,zhōng guó,China
 中午,zhōngwǔ,noon
 住,zhù,live

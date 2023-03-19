@@ -38,7 +38,18 @@ function GetCurrentWord()
 }
 
 var curr = GetCurrentWord()
-document.getElementById("wordcard-chinese").innerHTML = curr[0];
+const wordchinese = document.getElementById("wordcard-chinese");
+const wordcard = document.getElementById("wordcard")
+wordchinese.innerHTML = curr[0];
+
+if (curr[0].length == 1) {
+    wordchinese.style.fontSize = "220px";
+} else if (curr[0].length == 2) {
+    wordchinese.style.fontSize = "150px";
+    console.log(curr[0].length)
+} else if (curr[0].length == 3) {
+    wordchinese.style.fontSize = "100px";
+}
 document.getElementById("wordcard-pinyin").innerHTML = curr[1];
 document.getElementById("wordcard-meaning").innerHTML = `Meaning:  ${curr[2]}`;
 
