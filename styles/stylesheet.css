@@ -505,3 +505,66 @@ transform: translate(-50%, -0%);
   text-align: center;
   color: #000000;
 }
+
+/* Learn-New-Words */
+
+.learn-box{
+  position: absolute;
+  width: 310px;
+  height: 435px;
+  left: 40px;
+  top: 189px;
+  background-image: url('../content/card-bglearn-words-dropbox.svg');
+}
+.learn-box-text{
+  position: absolute;
+  width: 282px;
+  height: 60px;
+  left: 14px;
+  top: 35px;
+
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.dropdown-box{
+  width: 260px;
+  position: absolute;
+  left: 30px;
+  top: 130px;
+  background-color: #ffffff;
+}
+
+.dropdown-menu{
+  min-width: 260px
+}
+
+.dropdown-toggle{
+  min-width: 260px;
+  text-align: left;
+}
+
+.learn-start{
+  position: absolute;
+  width: 139px;
+  height: 49px;
+  left: 125px;
+  top: 662px;
+  color: #ffffff;
+  background: #74B8A7;
+  border-radius: 23px;
+  text-align: center;
+  padding: 6px 0px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+
+  }
