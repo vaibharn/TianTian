@@ -206,26 +206,34 @@ transform: translate(-50%, -0%);
 
 .home-icon{
   position: absolute;
-  width: 39px;
-  height: 39px;
-  left: 32px;
+  width: 37px;
+  height: 37px;
+  left: 33px;
   top: 11px;
 }
 
 .search-icon{
   position: absolute;
-  width: 39px;
-  height: 39px;
-  left: 176px;
+  width: 37px;
+  height: 37px;
+  left: 119px;
   top: 11px;
 }
 
 .card-icon{
   position: absolute;
-  width: 39px;
-  height: 39px;
-  left: 319px;
+  width: 30px;
+  height: 30px;
+  left: 212px;
   top: 11px;
+}
+
+.game-icon{
+  position: absolute;
+  width: 34px;
+  height: 24px;
+  left: 300px;
+  top: 16px;
 }
 
 
@@ -282,7 +290,6 @@ transform: translate(-50%, -0%);
   position: relative;
   width: 355px;
   height: 690px;
-  max_height: 690px;
   margin: auto;
   top: 0px;
 }
@@ -424,5 +431,77 @@ transform: translate(-50%, -0%);
   line-height: 40px;
   text-align: left;
 
+  color: #000000;
+}
+
+/* Flashcard */
+
+.flash-screen-header-english{
+  position: absolute;
+  left: 12px;
+  top: 96px;
+
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #000000;
+}
+
+.flash-screen-header-chinese{
+
+  position: absolute;
+  left: 12px;
+  top: 126px;
+  
+  font-family: 'Xiao Lai SC';
+  font-size: 20px;
+  line-height: 23px;
+  
+  color: #000000;
+}
+
+.flashcard-menu{
+  position: relative;
+  top: 100px;
+  height: 620px;
+  max-height: 620px;
+}
+
+.flashcard-option{
+  position: relative;
+  width: 321px;
+  height: 218px;
+  margin: auto;
+}
+
+.flashcard-option-text-english{
+  position: absolute;
+  top: 47px;
+  left: 10px;
+  height: 60px;
+  width: 170px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+
+.flashcard-option-text-chinese{
+  position: absolute;
+  left: 20px;
+  top: 130px;
+  height: 40px;
+  width: 130px;
+  font-family: 'Xiao Lai SC';
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
   color: #000000;
 }
