@@ -9,7 +9,6 @@
 <link href="https://fonts.cdnfonts.com/css/circular-std" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/bunch-blossoms-personal-use" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
 <link rel="stylesheet" href="../styles/stylesheet.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -18,33 +17,63 @@
 
 <body>
 	<div class="container">
-		<div class = "align-self-center logo_row " id="logo"> TianTian </div>
+		<div class = "align-self-center logo_row " id="logo"> TianTian
+		</div>
 
-        <div class = "flash-screen-header-english"> Learn New Words </div>
-        <div class = "flash-screen-header-chinese"> 学习生词 </div>
-        
-        <div class = "learn-box">
-            <div class = "learn-box-text">
-                How many words would you like to learn?
-            </div>
-            <div class="dropdown dropdown-box rounded-2">
-                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    select
-                </button>
-                <ul class="dropdown-menu" id = "dropdown-menu">
-                    <li><a class="dropdown-item" href="#">10</a></li>
-                    <li><a class="dropdown-item" href="#">20</a></li>
-                    <li><a class="dropdown-item" href="#">30</a></li>
-                    <li><a class="dropdown-item" href="#">40</a></li>
-                    <li><a class="dropdown-item" href="#">50</a></li>
-                </ul>
-                </div>
+        <div class = "goback" id = "goback">
+            <i class="bi bi-chevron-left fs-6 "></i> Go Back
         </div>
 
-        <div class = "learn-start">
-            Start
-        </div>
+		<div class = "learnword-content">
+			<div class = "learnword-box" id = "learnword-box">
+				<div class="flip-card" id = "flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front" id = "flip-card-front">
+							<div class = "learnword-chinese-text">
+								爱
+							</div>
+						</div>
+						<div class="flip-card-back" id = "flip-card-back">
+							<div class = "learnword-chinese-text-small">
+								爱
+							</div>
+							<div class = "learnword-pinyin-text-small">
+								ài
+							</div>
+							<div class = "learnword-engish-meaning-small">
+								Meaning: love
+							</div>
 
+							<div class = "chinese_sentence">
+								我很爱你，你爱我吗？
+							</div>
+							<div class = "pinyin_sentence">
+								Wo hen ai no, ni ai wo ma?
+							</div>
+							<div class = "english_sentence">
+								I really love you do you love me?
+							</div>
+						</div> 
+					</div>
+				</div>
+				<div class = "learnword-taptoflip">
+					Tap to flip
+				</div>
+			</div>
+
+			
+			<div class = "learnword-wrong" id = "wrong">
+				<img src = "../content/wrongicon.svg" alt = "wrong">
+			</div>
+			<div class = "learnword-undo" id = "undo">
+				<img src = "../content/undoicon.svg" alt = "undo">
+			</div>
+			<div class = "learnword-correct" id = "correct">
+				<img src = "../content/correcticon.svg">
+			</div>
+		</div>
+
+		
 		<div class = "align-self-center bottom_row">
 			<div class = "row">
 				<div class = "home-icon" onclick= "window.location.href = '/TianTian/';">
@@ -52,21 +81,20 @@
 				</div>
 
 				<div class = "search-icon" onclick= "window.location.href = '/TianTian/search/';">
-					<img src = "../content/icon/search_line.svg" alt="Search"/>
+					<img src = "../content/icon/search_solid.svg" alt="Search"/>
 				</div>
 
 				<div class = "card-icon" onclick= "window.location.href = '/TianTian/flashcard-menu/';">
-					<img src = "../content/icon/flashcard_solid.svg" alt="FlashCard"/>
+					<img src = "../content/icon/flashcard_line.svg" alt="FlashCard"/>
 				</div>
 				<div class = "game-icon">
 					<img src = "../content/icon/gameicon_line.svg" alt="FlashCard"/>
 				</div>
 			</div>
 		</div>
-	</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-	<script src="../scripts/learn_new_words.js"></script>
+	<script src="../scripts/learnwords.js"></script>
 
 	</body>
 </html>
