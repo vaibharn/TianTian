@@ -1,0 +1,14 @@
+URGENT priority
+1. make the 'INCORRECT WORDS' 'revise learnt words' clickable. it should open up to a list according to the exel
+2. make demo flashcards- atleast 3. they should be flippable and move to the next one when u click tick or cross
+3. make the game mode clickable. three sample questions should be there
+4. add all the info in the search cards
+(ill add a "end of demo' screen for what shows after those 3"
+
+2nd tier priority
+1.add audio file in each card in the search function
+2. add stroke order in each card in the search function
+3. make 10 flashards in flashcard mode, and display score accurately
+4.makw 10 questions in game mode, display score acurately.
+
+if the search bar cant be made functional by 26th jus remove it and we can keep it as a list
