@@ -21,56 +21,13 @@
 		<div class = "align-self-center logo_row " id="logo"> TianTian
 		</div>
 
-        <div class = "goback" id = "goback">
-            <i class="bi bi-chevron-left fs-6 "></i> Go Back
+        <div class = "flash-screen-header-english"> Revise Learnt Words </div>
+        <div class = "flash-screen-header-chinese"> 复习已经学习的词 </div>
+
+        <div class = "overflow-auto word_list word-list-revise" id = "word_list">
         </div>
+        
 
-		<div class = "learnword-content">
-			<div class = "learnword-box" id = "learnword-box">
-				<div class="flip-card" id = "flip-card">
-					<div class="flip-card-inner">
-						<div class="flip-card-front" id = "flip-card-front">
-							<div class = "learnword-chinese-text" id = "chinese-text">爱</div>
-						</div>
-						<div class="flip-card-back" id = "flip-card-back">
-							<div class = "learnword-chinese-text-small" id = "chinese-text-small">爱</div>
-							<div class = "learnword-pinyin-text-small" id = "pinyin-text-small">
-								ài
-							</div>
-							<div class = "learnword-english-meaning-small" id = "english-meaning-small">
-								Meaning: love
-							</div>
-
-							<div class = "chinese-sentence" id = "chinese-sentence">
-								我很爱你，你爱我吗？
-							</div>
-							<div class = "pinyin-sentence" id = "pinyin-sentence">
-								Wo hen ai no, ni ai wo ma?
-							</div>
-							<div class = "english-sentence" id = "english-sentence">
-								I really love you do you love me?
-							</div>
-						</div> 
-					</div>
-				</div>
-				<div class = "learnword-taptoflip">
-					Tap to flip
-				</div>
-			</div>
-
-			
-			<div class = "learnword-wrong" id = "wrong">
-				<img src = "../content/wrongicon.svg" alt = "wrong">
-			</div>
-			<div class = "learnword-undo" id = "undo">
-				<img src = "../content/undoicon.svg" alt = "undo">
-			</div>
-			<div class = "learnword-correct" id = "correct">
-				<img src = "../content/correcticon.svg">
-			</div>
-		</div>
-
-		
 		<div class = "align-self-center bottom_row">
 			<div class = "row">
 				<div class = "home-icon" onclick= "window.location.href = '/TianTian/';">
@@ -91,8 +48,6 @@
 		</div>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-	<script src="../scripts/learnwords.js"></script>
-	<script src="../scripts/flashcard.js"></script>
-
+	<script src="../scripts/revise.js"></script>
 	</body>
 </html>

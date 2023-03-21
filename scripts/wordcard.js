@@ -46,8 +46,6 @@ if (curr[0].length == 1) {
     wordchinese.style.fontSize = "220px";
 } else if (curr[0].length == 2) {
     wordchinese.style.fontSize = "150px";
-    wordcard.style.backgroundImage = 
-    console.log(curr[0].length)
 } else if (curr[0].length == 3) {
     wordchinese.style.fontSize = "100px";
 }
