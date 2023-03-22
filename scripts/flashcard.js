@@ -22,6 +22,13 @@ var chinese_sentence = document.getElementById('chinese-sentence');
 var pinyin_sentence = document.getElementById('pinyin-sentence');
 var english_sentence = document.getElementById('english-sentence');
 
+
+function Unflip() {
+    front.classList.contains("is-flipped") === true ? front.classList.remove("is-flipped") : console.log('Not flipped');
+    back.classList.contains("is-flipped") === true ? back.classList.remove("is-flipped") : console.log('Not flipped');
+}
+
+
 correct.addEventListener('click',()=>{
     console.log('correct')
     for (var i = curr+1;i<dataset.length;i++){
@@ -36,6 +43,7 @@ correct.addEventListener('click',()=>{
         }
     }
     update(curr);
+    
 })
 
 wrong.addEventListener('click',()=>{
@@ -63,27 +71,38 @@ undo.addEventListener('click',()=>{
     }
 })
 
-function update(i){
-    console.log(dataset[i])
+function updateFront(i){
     if (dataset[i].Chinese.length == 1) {
-        chinese_small.style.fontSize = "220px";
         chinese_large.style.fontSize = "220px";
-
     } else if (dataset[i].Chinese.length == 2) {
-        chinese_small.style.fontSize = "150px";
         chinese_large.style.fontSize = "150px";
-
     } else if (dataset[i].Chinese.length == 3) {
-        chinese_small.style.fontSize = "100px";
         chinese_large.style.fontSize = "100px";
-
     }
     chinese_large.innerHTML=dataset[i].Chinese;
+}
+
+function updateBack(i){
+    if (dataset[i].Chinese.length == 1) {
+        chinese_small.style.fontSize = "220px";
+    } else if (dataset[i].Chinese.length == 2) {
+        chinese_small.style.fontSize = "150px";
+    } else if (dataset[i].Chinese.length == 3) {
+        chinese_small.style.fontSize = "100px";
+    }
+
     chinese_small.innerHTML=dataset[i].Chinese;
     pinyin.innerHTML=dataset[i].Pinyin;
     meaning.innerHTML=`Meaning: ${dataset[i].Meaning}`;
     chinese_sentence.innerHTML=dataset[i].Sentence;
     pinyin_sentence.innerHTML=dataset[i].Sentence_Pinyin;
     english_sentence.innerHTML=dataset[i].Sentence_English;
+}
 
+function update(i){
+    updateFront(i);
+    Unflip();
+    setTimeout(function(){
+        updateBack(i);
+    }, 800);
 }
