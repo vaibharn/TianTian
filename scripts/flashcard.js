@@ -1,11 +1,9 @@
-
-
 var dataset;
 var curr = 0;
-var corr = 0;
-var incorr = 0;
 var prev = [];
-
+var word_status = [];
+const nwords = parseInt(GetURLParameter('nwords'));
+const word_box = document.getElementById("learnword-box");
 d3.tsv("../content/test.tsv", function(data){
    dataset=data;
    });
@@ -28,7 +26,6 @@ function Unflip() {
     back.classList.contains("is-flipped") === true ? back.classList.remove("is-flipped") : console.log('Not flipped');
 }
 
-
 correct.addEventListener('click',()=>{
     console.log('correct')
     for (var i = curr+1;i<dataset.length;i++){
@@ -36,8 +33,9 @@ correct.addEventListener('click',()=>{
             i = 0;
         }
         if (dataset[i].Status == ""){
-            dataset[i].Status = "Learnt"
-            prev.push(curr)
+            dataset[i].Status = "Learnt";
+            prev.push(curr);
+            word_status.push(1);
             curr = i;
             break;
         }
@@ -53,8 +51,9 @@ wrong.addEventListener('click',()=>{
             i = 0;
         }
         if (dataset[i].Status == ""){
-            dataset[i].Status = "Incorrect"
-            prev.push(curr)
+            dataset[i].Status = "Incorrect";
+            prev.push(curr);
+            word_status.push(0);
             curr = i;
             break;
         }
@@ -65,8 +64,9 @@ wrong.addEventListener('click',()=>{
 undo.addEventListener('click',()=>{
     console.log('undo')
     if (prev.length > 0){
-        dataset[curr].Status = ""
+        dataset[curr].Status = "";
         curr = prev.pop()
+        word_status.pop()
         update(curr);
     }
 })
@@ -74,9 +74,12 @@ undo.addEventListener('click',()=>{
 function updateFront(i){
     if (dataset[i].Chinese.length == 1) {
         chinese_large.style.fontSize = "220px";
+        word_box.style.backgroundImage = "url('/TianTian/content/flashcardmodebg1.svg')";
     } else if (dataset[i].Chinese.length == 2) {
+        word_box.style.backgroundImage = "url('/TianTian/content/flashcardmodebg2.svg')";
         chinese_large.style.fontSize = "150px";
     } else if (dataset[i].Chinese.length == 3) {
+        word_box.style.backgroundImage = "url('/TianTian/content/flashcardmodebg3.svg')";
         chinese_large.style.fontSize = "100px";
     }
     chinese_large.innerHTML=dataset[i].Chinese;
@@ -100,9 +103,14 @@ function updateBack(i){
 }
 
 function update(i){
+    if(prev.length == nwords) {
+        console.log(word_status)
+        removeDiv();
+    }
     updateFront(i);
     Unflip();
     setTimeout(function(){
         updateBack(i);
     }, 800);
+
 }

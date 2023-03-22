@@ -582,7 +582,7 @@ transform: translate(-50%, -0%);
 }
 
 .learnword-box{
-  background-image: url('../content/flashcardmodebgdesign1.svg');
+  background-image: url('../content/flashcardmodebg1.svg');
   width: 338px;
   height: 598px;
 }
@@ -720,10 +720,84 @@ color: #000000;
   top: 562px;
 }
 
+.learnword-congrats{
+  position: absolute;
+  text-align: center;
+  width: 390px;
+  top: 151px;
+
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #000000;
+
+}
+
+.learnword-wordnum{
+  position: absolute;
+  text-align: center;
+  width: 390px;
+  top: 181px;
+
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 51px;  
+  color: #5F4D89;
+
+}
+
+
+
+.learnword-new-words{
+  position: absolute;
+  text-align: center;
+  width: 390px;
+  top: 232px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.learnword-congrats-panda{
+  position: absolute;
+  width: 323px;
+  height: 325px;
+  left: 15px;
+  top: 408px;
+  background-image: url('/TianTian/content/panda1.svg');
+}
+
+.learnword-next-set{
+  position: absolute;
+  width: 220px;
+  height: 51px;
+  left: 85px;
+  top: 396px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #000000;
+  background: #8EA3D8;
+  border-radius: 20px;
+}
 
 .word-list-revise{
   position: absolute;
-  top: 170px;
+  top: 408px;
   height: 630px;
   scrollbar-width: none;
 }
