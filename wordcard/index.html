@@ -13,6 +13,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.min.js" integrity="sha512-Y8iWYJDo6HiTo5xtml1g4QqHtl/PO1w+dmUpQfQSOTqKNsMhExfyPN2ncNAe9JuJUSKzwK/b6oaNPop4MXzkwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 
 <body>
@@ -29,16 +30,24 @@
             </div>
             <div class = "wordcard-pinyin" id = "wordcard-pinyin">
             </div>
-            <div class = "wordcard-bottom" id = "wordcard-bottom">
-                Some Random Stuff
+            <div class = "wordcard-sentence-chinese" id = "wordcard-sentence-chinese">
+            </div>
+			<div class = "wordcard-sentence-pinyin" id = "wordcard-sentence-pinyin">
+            </div>
+			<div class = "wordcard-sentence-english" id = "wordcard-sentence-english">
             </div>
             <div class = "strokeorder-button" id = "strokeorder">
                 see stroke order
             </div>
+			<div class = "wordcard-audio" id = "wordcard-audio">
+				<i class="bi bi-volume-up" style="font-size: 40px;"></i>
+			</div>	
             <div class = "wordcard-meaning" id = "wordcard-meaning">
                 Meaning:
             </div>
-
+			<div class = "strokeorder" id = "strokeorder-box">
+				<img src = "" id = "strokeorder-video" style = "height: 100%; width: 100%;">
+			</div>
         </div>
 
 		

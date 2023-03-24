@@ -416,11 +416,6 @@ transform: translate(-50%, -0%);
   
 }
 
-.wordcard-bottom{
-  position: absolute;
-  top: 500px;
-}
-
 .wordcard-meaning{
   position: absolute;
   left: 3px;
@@ -434,6 +429,70 @@ transform: translate(-50%, -0%);
   text-align: left;
 
   color: #000000;
+}
+
+.wordcard-sentence-chinese{
+  position: absolute;
+  width: 338px;
+  height: 40px;
+  left: 0px;
+  text-align: center;
+  top: 462px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 32px;
+  line-height: 40px;
+
+color: #000000;
+}
+
+.wordcard-sentence-pinyin{
+  position: absolute;
+  width: 338px;
+  height: 25px;
+  left: 0px;
+  text-align: center;
+  top: 497px;
+  font-family: 'Xiao Lai SC';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 28px;
+
+color: #000000;
+}
+
+.wordcard-sentence-english{
+  position: absolute;
+  width: 338px;
+  height: 60px;
+  top: 560px;
+  text-align: center;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 24px;
+  line-height: 30px;
+  
+  color: #000000;
+}
+
+.wordcard-audio{
+  position: absolute;
+  left: 20px;
+  top: 305px;
+  width: 50px;
+  height: 50px;
+}
+
+.strokeorder{
+  position: absolute;
+  top: 4px;
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+  display: None;
 }
 
 /* Flashcard */

@@ -1,14 +1,34 @@
-$.ajax({
-    url: "../content/test.csv",
-    async: false,
-    success: function (csvd) {
-        data = $.csv.toArrays(csvd);
-    },
-    dataType: "text",
-    complete: function () {
-        // call a function on complete 
+const fontsize_options = ['', '220px', '150px', '100px'];
+
+d3.tsv("../content/test.tsv", function(data){
+    var curr = GetCurrentWord(data);
+    console.log(curr);
+    const wordchinese = document.getElementById("wordcard-chinese");
+    const wordcard = document.getElementById("wordcard")
+    wordchinese.innerHTML = curr.Chinese;
+    wordchinese.style.fontSize = fontsize_options[curr.Chinese.length]
+    UpdateCard(curr);
+    });
+
+function UpdateCard(curr){
+    document.getElementById("wordcard-pinyin").innerHTML = curr.Pinyin;
+    document.getElementById("wordcard-meaning").innerHTML = `Meaning:  ${curr.English}`;
+    document.getElementById('wordcard-sentence-chinese').innerHTML = curr.Sentence;
+    document.getElementById('wordcard-sentence-pinyin').innerHTML = curr.Sentence_Pinyin;
+    document.getElementById('wordcard-sentence-english').innerHTML = curr.Sentence_English;
+
+    document.getElementById("wordcard-audio").onclick = function () {
+        new Audio(`/TianTian/content/audio_files/${curr.Audio}`).play();
     }
-});
+    document.getElementById("strokeorder").onclick = function () {
+        document.getElementById('strokeorder-box').style.display = "block";
+        document.getElementById("strokeorder-video").src = '/TianTian/content/strokeorder/1.gif'
+        setTimeout(function(){
+            document.getElementById('strokeorder-box').style.display = "None";
+            document.getElementById("strokeorder-video").src = ''    
+        }, 6000);
+    }
+}
 
 function GetURLParameter(sParam)
 {
@@ -24,33 +44,18 @@ function GetURLParameter(sParam)
     }
 }
 
-function GetCurrentWord()
+function GetCurrentWord(data)
 {
     var word = decodeURIComponent(GetURLParameter('word'));
-    for (var i=1; i < data.length; i++)
+    for (var i=0; i < data.length; i++)
     {
-        if (data[i][0] == word)
+        if (data[i].Chinese == word)
         {
             return data[i]
         }
     }
     return 0
 }
-
-var curr = GetCurrentWord()
-const wordchinese = document.getElementById("wordcard-chinese");
-const wordcard = document.getElementById("wordcard")
-wordchinese.innerHTML = curr[0];
-
-if (curr[0].length == 1) {
-    wordchinese.style.fontSize = "220px";
-} else if (curr[0].length == 2) {
-    wordchinese.style.fontSize = "150px";
-} else if (curr[0].length == 3) {
-    wordchinese.style.fontSize = "100px";
-}
-document.getElementById("wordcard-pinyin").innerHTML = curr[1];
-document.getElementById("wordcard-meaning").innerHTML = `Meaning:  ${curr[2]}`;
 
 document.getElementById("goback").onclick = function () {
     location.href = "/TianTian/search/";
