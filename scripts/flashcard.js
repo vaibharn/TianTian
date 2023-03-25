@@ -5,7 +5,8 @@ var word_status = [];
 const nwords = parseInt(GetURLParameter('nwords'));
 const word_box = document.getElementById("learnword-box");
 d3.tsv("../content/test.tsv", function(data){
-   dataset=data;
+   dataset=d3.shuffle(data);
+   update(0);
    });
 
 const wrong = document.getElementById('wrong');
@@ -74,13 +75,20 @@ undo.addEventListener('click',()=>{
 function updateFront(i){
     if (dataset[i].Chinese.length == 1) {
         chinese_large.style.fontSize = "220px";
-        word_box.style.backgroundImage = "url('/TianTian/content/flashcardmodebg1.svg')";
     } else if (dataset[i].Chinese.length == 2) {
-        word_box.style.backgroundImage = "url('/TianTian/content/flashcardmodebg2.svg')";
         chinese_large.style.fontSize = "150px";
     } else if (dataset[i].Chinese.length == 3) {
-        word_box.style.backgroundImage = "url('/TianTian/content/flashcardmodebg3.svg')";
         chinese_large.style.fontSize = "100px";
+    }
+
+    if(i % 3 == 0){
+        word_box.style.backgroundImage = "url('/TianTian/content/flashcardmodebg1.svg')";
+    } else if (i%3 == 1){
+        word_box.style.backgroundImage = "url('/TianTian/content/flashcardmodebg2.svg')";
+    }
+    else{
+        word_box.style.backgroundImage = "url('/TianTian/content/flashcardmodebg3.svg')";
+
     }
     chinese_large.innerHTML=dataset[i].Chinese;
 }

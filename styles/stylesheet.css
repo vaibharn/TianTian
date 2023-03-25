@@ -864,3 +864,248 @@ color: #000000;
 div::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
+
+/* Game Mode */
+
+.game-mode-english{
+  position: absolute;
+  width: 390px;
+  top: 108px;
+  text-align: center;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.game-mode-chinese{
+  position: absolute;
+  width: 390px;
+  top: 138px;
+  text-align: center;
+  font-family: 'Xiao Lai SC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+.game-mode-rectangle{
+  position: absolute;
+  width: 273px;
+  height: 474px;
+  left: 58px;
+  top: 185px;
+  background: #BCAFEF;
+  border-radius: 24px;
+}
+
+.game-mode-rule{
+  position: absolute;
+  width: 273px;
+  height: 33px;
+  top: 47px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  color: #000000;
+}
+
+.game-mode-text{
+  position: absolute;
+  width: 273px;
+  height: 180px;
+  top: 101px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #463881;
+}
+
+.game-mode-start{
+  position: absolute;
+  width: 147px;
+  height: 61px;
+  left: 63px;
+  top: 355px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #7F6FBB;
+  border-radius: 34px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 61px;
+}
+
+/* Test Yourself */
+
+.timer-bar{
+  position: absolute;
+  width: 326px;
+  height: 12px;
+  left: 32px;
+  top: 125px;
+  background: #EEF0F7;
+  border-radius: 31px;
+}
+
+.timer-bar-animation{
+  animation: progres 10s linear; 
+}
+
+
+@keyframes progres{
+  0%{
+    width: 100%;
+    background: #71E9AF;
+  }
+  25%{
+      width: 75%;
+      background: #E9C071;
+  }
+  50%{
+      width: 50%;
+  }
+  75%{
+      width: 25%;
+      background: #E97971;
+  }
+  100%{
+      width: 0%;
+      background: #FF6363;
+  }
+}
+
+.test-text-english{
+position: absolute;
+width: 390px;
+height: 190px;
+top: 137px;
+text-align: center;
+font-family: 'Circular Std';
+font-style: normal;
+font-weight: 700;
+font-size: 150px;
+color: #000000;
+}
+
+.test-option1{
+  position: absolute;
+  width: 150px;
+  height: 51px;
+  left: 17px;
+  top: 350px;
+  background: #B5D5F2;
+  text-align: center;
+  line-height: 51px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  border-radius: 23px;
+}
+
+.test-option2{
+  position: absolute;
+  width: 150px;
+  height: 51px;
+  left: 222px;
+  top: 350px;
+  background: #B5D5F2;
+  text-align: center;
+  line-height: 51px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  border-radius: 23px;
+  }
+
+  .test-option1{
+  position: absolute;
+  width: 150px;
+  height: 51px;
+  left: 17px;
+  top: 350px;
+  background: #B5D5F2;
+  text-align: center;
+  line-height: 51px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  border-radius: 23px;
+}
+
+.test-option2{
+  position: absolute;
+  width: 150px;
+  height: 51px;
+  left: 222px;
+  top: 350px;
+  background: #B5D5F2;
+  text-align: center;
+  line-height: 51px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  border-radius: 23px;
+  }
+
+.test-option3{
+  position: absolute;
+  width: 150px;
+  height: 51px;
+  left: 17px;
+  top: 447px;
+  background: #B5D5F2;
+  text-align: center;
+  line-height: 51px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  border-radius: 23px;
+}
+  
+.test-option4{
+  position: absolute;
+  width: 150px;
+  height: 51px;
+  left: 222px;
+  top: 447px;
+  background: #B5D5F2;
+  text-align: center;
+  line-height: 51px;
+  font-family: 'Circular Std';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  border-radius: 23px;
+  }
+
+.test-panda{
+  position: absolute;
+  width: 263px;
+  height: 263px;
+  left: 65px;
+  top: 493px;
+  object-fit: contain;
+}
+
+.paused{
+  -webkit-animation-play-state:paused;
+  -moz-animation-play-state:paused;
+  -o-animation-play-state:paused; 
+  animation-play-state:paused;
+}
